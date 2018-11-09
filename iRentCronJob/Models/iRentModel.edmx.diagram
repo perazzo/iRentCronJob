@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="22840e6c6fc044b59053fdbca3fd44d3" Name="Diagram1" ZoomLevel="19">
+        <EntityTypeShape EntityType="iRentModel.background" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.checkregister" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.company" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.customer_bank" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.customer_cc" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.eviction" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.expensetype" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.property" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.stripe" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.stripe_customer" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.stripepayoutdetail" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.stripepayout" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.tenant" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.tenanttransaction" Width="1.5" PointX="4.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.transactiontype" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.unit" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.user" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.whitelable" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="iRentModel.chargetype" Width="1.5" PointX="7.375" PointY="13.75" />
+        <EntityTypeShape EntityType="iRentModel.collection" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="iRentModel.frequency" Width="1.5" PointX="15.375" PointY="3.75" />
+        <EntityTypeShape EntityType="iRentModel.postmethod" Width="1.5" PointX="15.375" PointY="6.75" />
+        <EntityTypeShape EntityType="iRentModel.recurringbill" Width="1.5" PointX="15.375" PointY="9.75" />
+        <EntityTypeShape EntityType="iRentModel.userlog" Width="1.5" PointX="13.375" PointY="15.75" />
+        <EntityTypeShape EntityType="iRentModel.vendor" Width="1.5" PointX="15.375" PointY="15.75" />
+        <EntityTypeShape EntityType="iRentModel.whitelist" Width="1.5" PointX="3.375" PointY="16.75" />
+        <EntityTypeShape EntityType="iRentModel.userpropertymap" Width="1.5" PointX="5.375" PointY="16.75" />
+        <EntityTypeShape EntityType="iRentModel.postvacancy" Width="1.5" PointX="7.375" PointY="16.75" />
+        <EntityTypeShape EntityType="iRentModel.properties_exclude" Width="1.5" PointX="17.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

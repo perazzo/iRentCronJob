@@ -1,0 +1,1806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="iRentModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="background">
+          <Key>
+            <PropertyRef Name="BackgroundID" />
+          </Key>
+          <Property Name="BackgroundID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantID" Type="int" />
+          <Property Name="LastResidence" Type="text" />
+          <Property Name="LastLandlordName" Type="varchar" MaxLength="50" />
+          <Property Name="LastLandlordPhone" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousResidence" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousLandlordName" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousLandlordPhone" Type="varchar" MaxLength="50" />
+          <Property Name="CurrentEmployer" Type="varchar" MaxLength="50" />
+          <Property Name="CurrentEmployerContact" Type="varchar" MaxLength="50" />
+          <Property Name="CurrentEmployerPhone" Type="varchar" MaxLength="50" />
+          <Property Name="CurrentSalary" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousEmployer" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousEmployerContact" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousEmployerPhone" Type="varchar" MaxLength="50" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="ApproveID" Type="int" />
+          <Property Name="ApproveComment" Type="varchar" MaxLength="200" />
+          <Property Name="HouseNumber" Type="int" />
+          <Property Name="StreetName" Type="varchar" MaxLength="255" />
+          <Property Name="Unit" Type="varchar" MaxLength="30" />
+          <Property Name="City" Type="varchar" MaxLength="100" />
+          <Property Name="State" Type="varchar" MaxLength="100" />
+          <Property Name="Zip" Type="varchar" MaxLength="20" />
+          <Property Name="HouseNumber2" Type="varchar" MaxLength="10" />
+          <Property Name="StreetName2" Type="varchar" MaxLength="100" />
+          <Property Name="City2" Type="varchar" MaxLength="100" />
+          <Property Name="State2" Type="varchar" MaxLength="100" />
+          <Property Name="Zip2" Type="varchar" MaxLength="20" />
+          <Property Name="Vehicle1" Type="varchar" MaxLength="100" />
+          <Property Name="Vehicle2" Type="varchar" MaxLength="100" />
+          <Property Name="Vehicle3" Type="varchar" MaxLength="100" />
+          <Property Name="Unit2" Type="varchar" MaxLength="10" />
+          <Property Name="DriversLicense" Type="varchar" MaxLength="30" />
+          <Property Name="DLState" Type="varchar" MaxLength="20" />
+          <Property Name="DesiredMoveInDate" Type="date" />
+          <Property Name="DesiredLeaseTerm" Type="varchar" MaxLength="30" />
+          <Property Name="DesiredRent" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="FormerName" Type="varchar" MaxLength="100" />
+          <Property Name="CurrentOccupancyType" Type="varchar" MaxLength="20" />
+          <Property Name="LastLandlordEmail" Type="varchar" MaxLength="100" />
+          <Property Name="LastRentAmount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="LastMoveReason" Type="varchar" MaxLength="100" />
+          <Property Name="LastMoveInDate" Type="date" />
+          <Property Name="LastLandlordContact" Type="bit" />
+          <Property Name="CurrentEmployeerStatus" Type="varchar" MaxLength="10" />
+          <Property Name="CurrentEmploymentType" Type="varchar" MaxLength="20" />
+          <Property Name="CurrentSelfEmployment" Type="bit" />
+          <Property Name="CurrentEmployeerEmail" Type="varchar" MaxLength="100" />
+          <Property Name="CurrentEmployeerAddress" Type="varchar" MaxLength="255" />
+          <Property Name="CurrentEmployeerPosition" Type="varchar" MaxLength="50" />
+          <Property Name="CurrentEmployeerStartDate" Type="date" />
+          <Property Name="Background.PreviousEmploymentType" Type="varchar" MaxLength="35" />
+          <Property Name="PreviousSelfEmployment" Type="bit" />
+          <Property Name="PreviousEmployeerEmail" Type="varchar" MaxLength="100" />
+          <Property Name="PreviousEmployeerAddress" Type="varchar" MaxLength="100" />
+          <Property Name="PreviousEmployeerPosition" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousEmployeerIncome" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="PreviousEmployeerStartDate" Type="date" />
+          <Property Name="PreviousEmployeerEndDate" Type="date" />
+          <Property Name="OtherIncome" Type="varchar" MaxLength="100" />
+          <Property Name="Pets" Type="varchar" MaxLength="100" />
+          <Property Name="VehicleMake" Type="varchar" MaxLength="50" />
+          <Property Name="VehicleModel" Type="varchar" MaxLength="50" />
+          <Property Name="VehicleYear" Type="varchar" MaxLength="20" />
+          <Property Name="VehicleColor" Type="varchar" MaxLength="30" />
+          <Property Name="VehicleLicensePlate" Type="varchar" MaxLength="20" />
+          <Property Name="VehicleLicensePlateState" Type="varchar" MaxLength="20" />
+          <Property Name="ProspectBank" Type="varchar" MaxLength="100" />
+          <Property Name="ProspectBankPhone" Type="varchar" MaxLength="30" />
+          <Property Name="ProspectBankAccount" Type="varchar" MaxLength="30" />
+          <Property Name="ReferenceName" Type="varchar" MaxLength="30" />
+          <Property Name="ReferenceRelationship" Type="varchar" MaxLength="40" />
+          <Property Name="ReferenceOccupation" Type="varchar" MaxLength="40" />
+          <Property Name="ReferenceAddress" Type="varchar" MaxLength="50" />
+          <Property Name="ReferencePhone" Type="varchar" MaxLength="20" />
+          <Property Name="ReferenceEmail" Type="varchar" MaxLength="35" />
+          <Property Name="EmergencyName" Type="varchar" MaxLength="100" />
+          <Property Name="EmergencyRelationship" Type="varchar" MaxLength="50" />
+          <Property Name="EmergencyPhone" Type="varchar" MaxLength="30" />
+          <Property Name="EmergencyEmail" Type="varchar" MaxLength="100" />
+          <Property Name="PreviousEmploymentType" Type="varchar" MaxLength="35" />
+          <Property Name="CurrentAddressMoveIn" Type="date" />
+          <Property Name="PreviousAddressMoveIn" Type="date" />
+          <Property Name="PreviousAddressMoveOut" Type="date" />
+          <Property Name="CurrentCompanyName" Type="varchar" MaxLength="50" />
+          <Property Name="PreviousCompanyName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="chargetypes">
+          <Key>
+            <PropertyRef Name="ChargeTypeID" />
+          </Key>
+          <Property Name="ChargeTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ChargeType" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CompanyID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="checkregister">
+          <Key>
+            <PropertyRef Name="CheckRegisterID" />
+          </Key>
+          <Property Name="CheckRegisterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+          <Property Name="ExpenseTypeID" Type="int" Nullable="false" />
+          <Property Name="Memo" Type="text" />
+          <Property Name="CheckDate" Type="date" Nullable="false" />
+          <Property Name="TransactionType" Type="int" Nullable="false" />
+          <Property Name="Paid" Type="int" Nullable="false" />
+          <Property Name="Reconciled" Type="int" Nullable="false" />
+          <Property Name="VendorID" Type="int" Nullable="false" />
+          <Property Name="Escrow" Type="int" Nullable="false" />
+          <Property Name="InvoiceDate" Type="date" Nullable="false" />
+          <Property Name="PaidDate" Type="date" Nullable="false" />
+          <Property Name="InvoiceNumber" Type="varchar" MaxLength="255" />
+          <Property Name="SubmittedBy" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="collections">
+          <Key>
+            <PropertyRef Name="CollectionsID" />
+          </Key>
+          <Property Name="CollectionsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantID" Type="int" Nullable="false" />
+          <Property Name="SentToCollections" Type="int" Nullable="false" />
+          <Property Name="DateSent" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ContactFName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ContactLName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ContactPhone" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ContactEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CompanyAdd" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CompanyAdd2" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CompanyCity" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CompanyState" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CompanyZip" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="CompanyStartDate" Type="date" Nullable="false" />
+          <Property Name="Active" Type="int" Nullable="false" />
+          <Property Name="LeadSourceCompanyID" Type="int" Nullable="false" />
+          <Property Name="MarketingSource" Type="int" Nullable="false" />
+          <Property Name="ChargeByACH" Type="int" />
+          <Property Name="CompanyPayFee" Type="int" />
+          <Property Name="AllPropertiesTenantPortal" Type="int" />
+          <Property Name="SendToCollection" Type="int" />
+          <Property Name="AllowEvictionTenantPayOnline" Type="int" />
+          <Property Name="TurnOffOnlinePaymentsNotification" Type="int" />
+          <Property Name="ShowAllPropertiesTenants" Type="int" />
+          <Property Name="LateLicensePayment" Type="int" />
+          <Property Name="AmountDue" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="TurnOffUpdatedTransactionNotification" Type="int" />
+          <Property Name="TurnOffSendToCollection" Type="int" />
+        </EntityType>
+        <EntityType Name="customer_bank">
+          <Key>
+            <PropertyRef Name="CustomerBankID" />
+          </Key>
+          <Property Name="CustomerBankID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="AccountHolderName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="AccountNumber" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="RoutingNumber" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Verified" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="customer_cc">
+          <Key>
+            <PropertyRef Name="Customer_CCID" />
+          </Key>
+          <Property Name="Customer_CCID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="CreditCard" Type="varchar" MaxLength="255" />
+          <Property Name="NameOnCard" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ExpirationMonth" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CCV" Type="varchar" MaxLength="255" />
+          <Property Name="PostalCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="ExpirationYear" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="evictions">
+          <Key>
+            <PropertyRef Name="EvictionID" />
+          </Key>
+          <Property Name="EvictionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantID" Type="int" Nullable="false" />
+          <Property Name="ResponseID" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Reference" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Message" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Zone" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Middle" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="City" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="State" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Zip" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Court" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="Agency_State" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Agency_County" Type="varchar" MaxLength="35" Nullable="false" />
+          <Property Name="Filing_Date" Type="date" Nullable="false" />
+          <Property Name="Case_No" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Plaintiff" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Notice_Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Judgement_Date" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Judgement_Amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Judgement" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Judgement_Sat_Amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Judgement_Rel_Date" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Dismissal_Date" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Plaintiff_Atty" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Plaintiff_Atty_Phone" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SubmittedDate" Type="date" Nullable="false" />
+          <Property Name="BackgroundCheckLogID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="expensetype">
+          <Key>
+            <PropertyRef Name="ExpenseTypeID" />
+          </Key>
+          <Property Name="ExpenseTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExpenseType" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="CompanyID" Type="int" Nullable="false" />
+          <Property Name="AccountTypeID" Type="int" Nullable="false" />
+          <Property Name="Active" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="frequency">
+          <Key>
+            <PropertyRef Name="FrequencyID" />
+          </Key>
+          <Property Name="FrequencyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Frequency" Type="varchar" MaxLength="35" Nullable="false" />
+        </EntityType>
+        <EntityType Name="postmethod">
+          <Key>
+            <PropertyRef Name="PostMethodID" />
+          </Key>
+          <Property Name="PostMethodID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PostMethod" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="postvacancies">
+          <Key>
+            <PropertyRef Name="PostVacancieID" />
+          </Key>
+          <Property Name="PostVacancieID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="AutoPostVacancies" Type="int" />
+          <Property Name="AutoRemoveNonVacancies" Type="int" />
+          <Property Name="UnitsUpdated" Type="int" />
+        </EntityType>
+        <EntityType Name="properties">
+          <Key>
+            <PropertyRef Name="PropertyID" />
+          </Key>
+          <Property Name="PropertyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="CompanyID" Type="int" Nullable="false" />
+          <Property Name="PropertyAddress1" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="PropertyAddress2" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="PropertyCity" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PropertyState" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PropertyZip" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PropertyEmail" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="PropertyPhone" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Threshold" Type="int" Nullable="false" />
+          <Property Name="LateFee" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="LateFeeApplied" Type="int" Nullable="false" />
+          <Property Name="EvictionThreshold" Type="int" Nullable="false" />
+          <Property Name="SMSThreshold" Type="int" Nullable="false" />
+          <Property Name="BankFee" Type="int" Nullable="false" />
+          <Property Name="DailyLateFee" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="PetFine" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="DailyPetFine" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Gas" Type="int" Nullable="false" />
+          <Property Name="Electricity" Type="int" Nullable="false" />
+          <Property Name="Water" Type="int" Nullable="false" />
+          <Property Name="Trash" Type="int" Nullable="false" />
+          <Property Name="TV" Type="int" Nullable="false" />
+          <Property Name="Internet" Type="int" Nullable="false" />
+          <Property Name="LaborRate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="EvictionFee" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SecurityDeposit" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="NRSecurityDeposit" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="MaxLateFee" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="MinBalance" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="ApplicationFee" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="AdminFee" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Active" Type="int" />
+          <Property Name="PropertyEIN" Type="varchar" MaxLength="15" />
+          <Property Name="PropertyURL" Type="varchar" MaxLength="50" />
+          <Property Name="PropertyWebsite" Type="varchar" MaxLength="250" />
+          <Property Name="PropertyLongDescription" Type="text" />
+          <Property Name="PropertyOfficeHoursID" Type="int" />
+          <Property Name="AllowTenantsPayLessThanAmountDue" Type="int" />
+          <Property Name="CheckID" Type="int" />
+          <Property Name="AlertUpcomingLeaseExpiration" Type="int" />
+          <Property Name="AbsorbApplicationFee" Type="int" />
+          <Property Name="NotifyWorkOrderChanges" Type="int" />
+          <Property Name="BackgroundScreening" Type="int" />
+        </EntityType>
+        <EntityType Name="properties_exclude">
+          <Key>
+            <PropertyRef Name="Properties_ExcludeID" />
+          </Key>
+          <Property Name="Properties_ExcludeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="AutoBill" Type="int" Nullable="false" />
+          <Property Name="AutoBillNotify" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="recurringbills">
+          <Key>
+            <PropertyRef Name="RecurringBillsID" />
+          </Key>
+          <Property Name="RecurringBillsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="11" Scale="2" Nullable="false" />
+          <Property Name="ExpenseTypeID" Type="int" Nullable="false" />
+          <Property Name="Memo" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="FirstPayDate" Type="date" Nullable="false" />
+          <Property Name="TransactionType" Type="int" Nullable="false" />
+          <Property Name="VendorID" Type="int" Nullable="false" />
+          <Property Name="Escrow" Type="int" Nullable="false" />
+          <Property Name="SubmitDate" Type="date" Nullable="false" />
+          <Property Name="InvoiceNumber" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="SubmittedBy" Type="int" Nullable="false" />
+          <Property Name="FrequencyID" Type="int" Nullable="false" />
+          <Property Name="PostMethodID" Type="int" Nullable="false" />
+          <Property Name="NumberofPayments" Type="int" Nullable="false" />
+          <Property Name="Unlimited" Type="int" Nullable="false" />
+          <Property Name="Paid" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stripe">
+          <Key>
+            <PropertyRef Name="StripeID" />
+          </Key>
+          <Property Name="StripeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="SecretKey" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PublishableKey" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stripe_customer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantID" Type="int" />
+          <Property Name="CompanyID" Type="int" />
+          <Property Name="StripeCustomer" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stripepayoutdetails">
+          <Key>
+            <PropertyRef Name="StripePayoutDetailsID" />
+          </Key>
+          <Property Name="StripePayoutDetailsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StripePayoutID" Type="int" Nullable="false" />
+          <Property Name="AmountGross" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Fee" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="AmountNet" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="stripepayouts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StripePayoutID" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="PaidDate" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tenants">
+          <Key>
+            <PropertyRef Name="TenantID" />
+          </Key>
+          <Property Name="TenantID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenantFName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenantMName" Type="varchar" MaxLength="50" />
+          <Property Name="TenantLName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TenantPhone" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TenantOtherPhone" Type="varchar" MaxLength="30" />
+          <Property Name="TenantEmail" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="SSN" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ProspectComments" Type="text" />
+          <Property Name="ProspectStartDate" Type="date" />
+          <Property Name="UnitTypeID" Type="int" />
+          <Property Name="Prospect" Type="int" />
+          <Property Name="UserID" Type="int" />
+          <Property Name="PropertyID" Type="int" />
+          <Property Name="LeaseStartDate" Type="date" />
+          <Property Name="LeaseEndDate" Type="date" />
+          <Property Name="MoveInDate" Type="date" />
+          <Property Name="MoveOutDate" Type="date" />
+          <Property Name="UnitID" Type="int" />
+          <Property Name="RentalAmount" Type="decimal" Precision="14" Scale="2" />
+          <Property Name="HousingAmount" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="SecurityDeposit" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="PetRent" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="TVCharge" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="UtilityCharge" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Collections" Type="int" />
+          <Property Name="WhiteList" Type="int" />
+          <Property Name="EvictionFiled" Type="int" />
+          <Property Name="EvictionFiledDate" Type="date" />
+          <Property Name="LeaseUpload" Type="int" />
+          <Property Name="LeaseAudit" Type="int" />
+          <Property Name="CellPhoneProviderID" Type="int" />
+          <Property Name="LeadSourceID" Type="int" />
+          <Property Name="OnLease" Type="varchar" MaxLength="200" />
+          <Property Name="StorageCharge" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="ParkingCharge" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="ConcessionAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="ConcessionReason" Type="varchar" MaxLength="255" />
+          <Property Name="NoticeGiven" Type="int" />
+          <Property Name="DelinquencyComments" Type="text" />
+          <Property Name="MTM" Type="int" />
+          <Property Name="MoveOutReasonID" Type="int" />
+          <Property Name="HOAFee" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="TenantDescriptionText" Type="text" />
+          <Property Name="LastInitialLateFee" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tenanttransactions">
+          <Key>
+            <PropertyRef Name="TenantTransactionID" />
+          </Key>
+          <Property Name="TenantTransactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ChargeTypeID" Type="int" Nullable="false" />
+          <Property Name="TenantID" Type="int" Nullable="false" />
+          <Property Name="TransactionTypeID" Type="int" Nullable="false" />
+          <Property Name="TransactionAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Comment" Type="text" Nullable="false" />
+          <Property Name="TenantTransactionDate" Type="date" Nullable="false" />
+          <Property Name="PaymentTypeID" Type="int" Nullable="false" />
+          <Property Name="CheckRegisterID" Type="int" Nullable="false" />
+          <Property Name="SubmittedBy" Type="int" Nullable="false" />
+          <Property Name="CheckNumber" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="DepositSourceID" Type="int" Nullable="false" />
+          <Property Name="CategoryID" Type="int" />
+          <Property Name="Allocated" Type="int" />
+          <Property Name="AmountAllocated" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="transactiontypes">
+          <Key>
+            <PropertyRef Name="TransactionTypeID" />
+          </Key>
+          <Property Name="TransactionTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TransactionType" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="units">
+          <Key>
+            <PropertyRef Name="UnitID" />
+          </Key>
+          <Property Name="UnitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UnitName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="UnitTypeID" Type="int" Nullable="false" />
+          <Property Name="Occupied" Type="int" Nullable="false" />
+          <Property Name="VacantDate" Type="date" Nullable="false" />
+          <Property Name="Comment" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Address" Type="varchar" MaxLength="250" />
+          <Property Name="PostToVacancies" Type="int" />
+        </EntityType>
+        <EntityType Name="userlog">
+          <Key>
+            <PropertyRef Name="UserLogID" />
+          </Key>
+          <Property Name="UserLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LastPropertyID" Type="int" Nullable="false" />
+          <Property Name="LoginDate" Type="date" Nullable="false" />
+          <Property Name="LogoutDate" Type="date" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="userpropertymap">
+          <Key>
+            <PropertyRef Name="UserPropertyMapID" />
+          </Key>
+          <Property Name="UserPropertyMapID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserFName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="UserLName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="UserEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserPhone" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CellPhoneProviderID" Type="int" Nullable="false" />
+          <Property Name="UserPW" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="UserStartDate" Type="date" Nullable="false" />
+          <Property Name="CompanyID" Type="int" Nullable="false" />
+          <Property Name="SecurityLevelID" Type="int" Nullable="false" />
+          <Property Name="Active" Type="int" Nullable="false" />
+          <Property Name="SignatureName" Type="varchar" MaxLength="255" />
+          <Property Name="SignatureFont" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="vendors">
+          <Key>
+            <PropertyRef Name="VendorID" />
+          </Key>
+          <Property Name="VendorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VendorName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VendorAddress1" Type="varchar" MaxLength="255" />
+          <Property Name="VendorAddress2" Type="varchar" MaxLength="255" />
+          <Property Name="VendorCity" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="VendorState" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="VendorZip" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VendorPhone" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VendorEmail" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="VendorStartDate" Type="date" Nullable="false" />
+          <Property Name="CompanyID" Type="int" Nullable="false" />
+          <Property Name="RoutingNumber" Type="varchar" MaxLength="30" />
+          <Property Name="AcountNumber" Type="varchar" MaxLength="50" />
+          <Property Name="Active" Type="int" Nullable="false" />
+          <Property Name="VendorEIN" Type="varchar" MaxLength="50" />
+          <Property Name="A1099" Type="int" />
+          <Property Name="Memo" Type="text" />
+        </EntityType>
+        <EntityType Name="whitelable">
+          <Key>
+            <PropertyRef Name="WhiteLableID" />
+          </Key>
+          <Property Name="WhiteLableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Logo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="BannerColor" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="LeftMarginColor" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="WelcomeColor" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Style" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Logout" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PriceImage" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="Promo1" Type="varchar" MaxLength="40" Nullable="false" />
+        </EntityType>
+        <EntityType Name="whitelist">
+          <Key>
+            <PropertyRef Name="WhiteListID" />
+          </Key>
+          <Property Name="WhiteListID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropertyID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="MoveOutDate" Type="date" Nullable="false" />
+          <Property Name="TenantID" Type="int" Nullable="false" />
+          <Property Name="TenantEmail" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="TenantPhone" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="FAddress" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="FCity" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="FState" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FZip" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Whitelist" Type="int" Nullable="false" />
+          <Property Name="Collections" Type="int" Nullable="false" />
+          <Property Name="SubmitDate" Type="date" Nullable="false" />
+          <Property Name="RentAgain" Type="int" Nullable="false" />
+          <Property Name="WhiteListComments" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="iRentModelStoreContainer">
+          <EntitySet Name="background" EntityType="Self.background" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="chargetypes" EntityType="Self.chargetypes" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="checkregister" EntityType="Self.checkregister" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="collections" EntityType="Self.collections" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="company" EntityType="Self.company" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="customer_bank" EntityType="Self.customer_bank" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="customer_cc" EntityType="Self.customer_cc" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="evictions" EntityType="Self.evictions" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="expensetype" EntityType="Self.expensetype" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="frequency" EntityType="Self.frequency" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="postmethod" EntityType="Self.postmethod" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="postvacancies" EntityType="Self.postvacancies" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="properties" EntityType="Self.properties" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="properties_exclude" EntityType="Self.properties_exclude" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="recurringbills" EntityType="Self.recurringbills" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="stripe" EntityType="Self.stripe" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="stripe_customer" EntityType="Self.stripe_customer" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="stripepayoutdetails" EntityType="Self.stripepayoutdetails" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="stripepayouts" EntityType="Self.stripepayouts" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="tenants" EntityType="Self.tenants" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="tenanttransactions" EntityType="Self.tenanttransactions" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="transactiontypes" EntityType="Self.transactiontypes" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="units" EntityType="Self.units" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="userlog" EntityType="Self.userlog" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="userpropertymap" EntityType="Self.userpropertymap" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="vendors" EntityType="Self.vendors" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="whitelable" EntityType="Self.whitelable" Schema="myirentc_rent" store:Type="Tables" />
+          <EntitySet Name="whitelist" EntityType="Self.whitelist" Schema="myirentc_rent" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="iRentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="background">
+          <Key>
+            <PropertyRef Name="BackgroundID" />
+          </Key>
+          <Property Name="BackgroundID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantID" Type="Int32" />
+          <Property Name="LastResidence" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="LastLandlordName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastLandlordPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousResidence" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousLandlordName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousLandlordPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmployer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmployerContact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmployerPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentSalary" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmployer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmployerContact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmployerPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="DateTime" />
+          <Property Name="ApproveID" Type="Int32" />
+          <Property Name="ApproveComment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="HouseNumber" Type="Int32" />
+          <Property Name="StreetName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Unit" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Zip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="HouseNumber2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="StreetName2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="City2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="State2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Zip2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Vehicle1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Vehicle2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Vehicle3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Unit2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DriversLicense" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DLState" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DesiredMoveInDate" Type="DateTime" />
+          <Property Name="DesiredLeaseTerm" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DesiredRent" Type="Decimal" />
+          <Property Name="FormerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentOccupancyType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LastLandlordEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastRentAmount" Type="Decimal" />
+          <Property Name="LastMoveReason" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastMoveInDate" Type="DateTime" />
+          <Property Name="LastLandlordContact" Type="Boolean" />
+          <Property Name="CurrentEmployeerStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmploymentType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentSelfEmployment" Type="Boolean" />
+          <Property Name="CurrentEmployeerEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmployeerAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmployeerPosition" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentEmployeerStartDate" Type="DateTime" />
+          <Property Name="Background_PreviousEmploymentType" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousSelfEmployment" Type="Boolean" />
+          <Property Name="PreviousEmployeerEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmployeerAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmployeerPosition" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmployeerIncome" Type="Decimal" />
+          <Property Name="PreviousEmployeerStartDate" Type="DateTime" />
+          <Property Name="PreviousEmployeerEndDate" Type="DateTime" />
+          <Property Name="OtherIncome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Pets" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleMake" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleYear" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleColor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleLicensePlate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="VehicleLicensePlateState" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ProspectBank" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ProspectBankPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ProspectBankAccount" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceRelationship" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceOccupation" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ReferencePhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ReferenceEmail" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyRelationship" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EmergencyEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousEmploymentType" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+          <Property Name="CurrentAddressMoveIn" Type="DateTime" />
+          <Property Name="PreviousAddressMoveIn" Type="DateTime" />
+          <Property Name="PreviousAddressMoveOut" Type="DateTime" />
+          <Property Name="CurrentCompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PreviousCompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="checkregister">
+          <Key>
+            <PropertyRef Name="CheckRegisterID" />
+          </Key>
+          <Property Name="CheckRegisterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" />
+          <Property Name="ExpenseTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Memo" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CheckDate" Type="DateTime" Nullable="false" />
+          <Property Name="TransactionType" Type="Int32" Nullable="false" />
+          <Property Name="Paid" Type="Int32" Nullable="false" />
+          <Property Name="Reconciled" Type="Int32" Nullable="false" />
+          <Property Name="VendorID" Type="Int32" Nullable="false" />
+          <Property Name="Escrow" Type="Int32" Nullable="false" />
+          <Property Name="InvoiceDate" Type="DateTime" Nullable="false" />
+          <Property Name="PaidDate" Type="DateTime" Nullable="false" />
+          <Property Name="InvoiceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SubmittedBy" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ContactFName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ContactLName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ContactPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ContactEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyAdd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyAdd2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyCity" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyState" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyZip" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyStartDate" Type="DateTime" Nullable="false" />
+          <Property Name="Active" Type="Int32" Nullable="false" />
+          <Property Name="LeadSourceCompanyID" Type="Int32" Nullable="false" />
+          <Property Name="MarketingSource" Type="Int32" Nullable="false" />
+          <Property Name="ChargeByACH" Type="Int32" />
+          <Property Name="CompanyPayFee" Type="Int32" />
+          <Property Name="AllPropertiesTenantPortal" Type="Int32" />
+          <Property Name="SendToCollection" Type="Int32" />
+          <Property Name="AllowEvictionTenantPayOnline" Type="Int32" />
+          <Property Name="TurnOffOnlinePaymentsNotification" Type="Int32" />
+          <Property Name="ShowAllPropertiesTenants" Type="Int32" />
+          <Property Name="LateLicensePayment" Type="Int32" />
+          <Property Name="AmountDue" Type="Decimal" />
+          <Property Name="TurnOffUpdatedTransactionNotification" Type="Int32" />
+          <Property Name="TurnOffSendToCollection" Type="Int32" />
+        </EntityType>
+        <EntityType Name="customer_bank">
+          <Key>
+            <PropertyRef Name="CustomerBankID" />
+          </Key>
+          <Property Name="CustomerBankID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="Int32" Nullable="false" />
+          <Property Name="AccountHolderName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccountNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RoutingNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Verified" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="customer_cc">
+          <Key>
+            <PropertyRef Name="Customer_CCID" />
+          </Key>
+          <Property Name="Customer_CCID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerID" Type="Int32" Nullable="false" />
+          <Property Name="CreditCard" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="NameOnCard" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ExpirationMonth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CCV" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ExpirationYear" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="eviction">
+          <Key>
+            <PropertyRef Name="EvictionID" />
+          </Key>
+          <Property Name="EvictionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantID" Type="Int32" Nullable="false" />
+          <Property Name="ResponseID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Reference" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Zone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Middle" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Zip" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Court" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Agency_State" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Agency_County" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Filing_Date" Type="DateTime" Nullable="false" />
+          <Property Name="Case_No" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Plaintiff" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Notice_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Judgement_Date" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Judgement_Amount" Type="Decimal" Nullable="false" />
+          <Property Name="Judgement" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Judgement_Sat_Amount" Type="Decimal" Nullable="false" />
+          <Property Name="Judgement_Rel_Date" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dismissal_Date" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Plaintiff_Atty" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Plaintiff_Atty_Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SubmittedDate" Type="DateTime" Nullable="false" />
+          <Property Name="BackgroundCheckLogID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="expensetype">
+          <Key>
+            <PropertyRef Name="ExpenseTypeID" />
+          </Key>
+          <Property Name="ExpenseTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExpenseType1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyID" Type="Int32" Nullable="false" />
+          <Property Name="AccountTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Active" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="property">
+          <Key>
+            <PropertyRef Name="PropertyID" />
+          </Key>
+          <Property Name="PropertyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CompanyID" Type="Int32" Nullable="false" />
+          <Property Name="PropertyAddress1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyAddress2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyCity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyState" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyZip" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyEmail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyPhone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Threshold" Type="Int32" Nullable="false" />
+          <Property Name="LateFee" Type="Decimal" Nullable="false" />
+          <Property Name="LateFeeApplied" Type="Int32" Nullable="false" />
+          <Property Name="EvictionThreshold" Type="Int32" Nullable="false" />
+          <Property Name="SMSThreshold" Type="Int32" Nullable="false" />
+          <Property Name="BankFee" Type="Int32" Nullable="false" />
+          <Property Name="DailyLateFee" Type="Decimal" Nullable="false" />
+          <Property Name="PetFine" Type="Decimal" Nullable="false" />
+          <Property Name="DailyPetFine" Type="Decimal" Nullable="false" />
+          <Property Name="Gas" Type="Int32" Nullable="false" />
+          <Property Name="Electricity" Type="Int32" Nullable="false" />
+          <Property Name="Water" Type="Int32" Nullable="false" />
+          <Property Name="Trash" Type="Int32" Nullable="false" />
+          <Property Name="TV" Type="Int32" Nullable="false" />
+          <Property Name="Internet" Type="Int32" Nullable="false" />
+          <Property Name="LaborRate" Type="Decimal" Nullable="false" />
+          <Property Name="EvictionFee" Type="Decimal" Nullable="false" />
+          <Property Name="SecurityDeposit" Type="Decimal" Nullable="false" />
+          <Property Name="NRSecurityDeposit" Type="Decimal" Nullable="false" />
+          <Property Name="MaxLateFee" Type="Decimal" Nullable="false" />
+          <Property Name="MinBalance" Type="Decimal" Nullable="false" />
+          <Property Name="ApplicationFee" Type="Decimal" Nullable="false" />
+          <Property Name="AdminFee" Type="Decimal" Nullable="false" />
+          <Property Name="Active" Type="Int32" />
+          <Property Name="PropertyEIN" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="PropertyURL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PropertyWebsite" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="PropertyLongDescription" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="PropertyOfficeHoursID" Type="Int32" />
+          <Property Name="AllowTenantsPayLessThanAmountDue" Type="Int32" />
+          <Property Name="CheckID" Type="Int32" />
+          <Property Name="AlertUpcomingLeaseExpiration" Type="Int32" />
+          <Property Name="AbsorbApplicationFee" Type="Int32" />
+          <Property Name="NotifyWorkOrderChanges" Type="Int32" />
+          <Property Name="BackgroundScreening" Type="Int32" />
+        </EntityType>
+        <EntityType Name="stripe">
+          <Key>
+            <PropertyRef Name="StripeID" />
+          </Key>
+          <Property Name="StripeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="SecretKey" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PublishableKey" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stripe_customer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantID" Type="Int32" />
+          <Property Name="CompanyID" Type="Int32" />
+          <Property Name="StripeCustomer" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stripepayoutdetail">
+          <Key>
+            <PropertyRef Name="StripePayoutDetailsID" />
+          </Key>
+          <Property Name="StripePayoutDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StripePayoutID" Type="Int32" Nullable="false" />
+          <Property Name="AmountGross" Type="Decimal" />
+          <Property Name="Fee" Type="Decimal" />
+          <Property Name="AmountNet" Type="Decimal" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="stripepayout">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StripePayoutID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="PaidDate" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tenant">
+          <Key>
+            <PropertyRef Name="TenantID" />
+          </Key>
+          <Property Name="TenantID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantFName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TenantMName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TenantLName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TenantPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TenantOtherPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TenantEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SSN" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProspectComments" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="ProspectStartDate" Type="DateTime" />
+          <Property Name="UnitTypeID" Type="Int32" />
+          <Property Name="Prospect" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <Property Name="PropertyID" Type="Int32" />
+          <Property Name="LeaseStartDate" Type="DateTime" />
+          <Property Name="LeaseEndDate" Type="DateTime" />
+          <Property Name="MoveInDate" Type="DateTime" />
+          <Property Name="MoveOutDate" Type="DateTime" />
+          <Property Name="UnitID" Type="Int32" />
+          <Property Name="RentalAmount" Type="Decimal" />
+          <Property Name="HousingAmount" Type="Decimal" />
+          <Property Name="SecurityDeposit" Type="Decimal" />
+          <Property Name="PetRent" Type="Decimal" />
+          <Property Name="TVCharge" Type="Decimal" />
+          <Property Name="UtilityCharge" Type="Decimal" />
+          <Property Name="Collections" Type="Int32" />
+          <Property Name="WhiteList" Type="Int32" />
+          <Property Name="EvictionFiled" Type="Int32" />
+          <Property Name="EvictionFiledDate" Type="DateTime" />
+          <Property Name="LeaseUpload" Type="Int32" />
+          <Property Name="LeaseAudit" Type="Int32" />
+          <Property Name="CellPhoneProviderID" Type="Int32" />
+          <Property Name="LeadSourceID" Type="Int32" />
+          <Property Name="OnLease" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="StorageCharge" Type="Decimal" />
+          <Property Name="ParkingCharge" Type="Decimal" />
+          <Property Name="ConcessionAmount" Type="Decimal" Nullable="false" />
+          <Property Name="ConcessionReason" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="NoticeGiven" Type="Int32" />
+          <Property Name="DelinquencyComments" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="MTM" Type="Int32" />
+          <Property Name="MoveOutReasonID" Type="Int32" />
+          <Property Name="HOAFee" Type="Decimal" />
+          <Property Name="TenantDescriptionText" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="LastInitialLateFee" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tenanttransaction">
+          <Key>
+            <PropertyRef Name="TenantTransactionID" />
+          </Key>
+          <Property Name="TenantTransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ChargeTypeID" Type="Int32" Nullable="false" />
+          <Property Name="TenantID" Type="Int32" Nullable="false" />
+          <Property Name="TransactionTypeID" Type="Int32" Nullable="false" />
+          <Property Name="TransactionAmount" Type="Decimal" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TenantTransactionDate" Type="DateTime" Nullable="false" />
+          <Property Name="PaymentTypeID" Type="Int32" Nullable="false" />
+          <Property Name="CheckRegisterID" Type="Int32" Nullable="false" />
+          <Property Name="SubmittedBy" Type="Int32" Nullable="false" />
+          <Property Name="CheckNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DepositSourceID" Type="Int32" Nullable="false" />
+          <Property Name="CategoryID" Type="Int32" />
+          <Property Name="Allocated" Type="Int32" />
+          <Property Name="AmountAllocated" Type="Decimal" />
+        </EntityType>
+        <EntityType Name="transactiontype">
+          <Key>
+            <PropertyRef Name="TransactionTypeID" />
+          </Key>
+          <Property Name="TransactionTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransactionType1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="unit">
+          <Key>
+            <PropertyRef Name="UnitID" />
+          </Key>
+          <Property Name="UnitID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UnitName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="UnitTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Occupied" Type="Int32" Nullable="false" />
+          <Property Name="VacantDate" Type="DateTime" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="PostToVacancies" Type="Int32" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserFName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserLName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserPhone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CellPhoneProviderID" Type="Int32" Nullable="false" />
+          <Property Name="UserPW" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UserStartDate" Type="DateTime" Nullable="false" />
+          <Property Name="CompanyID" Type="Int32" Nullable="false" />
+          <Property Name="SecurityLevelID" Type="Int32" Nullable="false" />
+          <Property Name="Active" Type="Int32" Nullable="false" />
+          <Property Name="SignatureName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SignatureFont" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="whitelable">
+          <Key>
+            <PropertyRef Name="WhiteLableID" />
+          </Key>
+          <Property Name="WhiteLableID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Logo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BannerColor" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LeftMarginColor" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WelcomeColor" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Style" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Logout" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PriceImage" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Promo1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="MyiRentEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="backgrounds" EntityType="Self.background" />
+          <EntitySet Name="checkregisters" EntityType="Self.checkregister" />
+          <EntitySet Name="companies" EntityType="Self.company" />
+          <EntitySet Name="customer_bank" EntityType="Self.customer_bank" />
+          <EntitySet Name="customer_cc" EntityType="Self.customer_cc" />
+          <EntitySet Name="evictions" EntityType="Self.eviction" />
+          <EntitySet Name="expensetypes" EntityType="Self.expensetype" />
+          <EntitySet Name="properties" EntityType="Self.property" />
+          <EntitySet Name="stripes" EntityType="Self.stripe" />
+          <EntitySet Name="stripe_customer" EntityType="Self.stripe_customer" />
+          <EntitySet Name="stripepayoutdetails" EntityType="Self.stripepayoutdetail" />
+          <EntitySet Name="stripepayouts" EntityType="Self.stripepayout" />
+          <EntitySet Name="tenants" EntityType="Self.tenant" />
+          <EntitySet Name="tenanttransactions" EntityType="Self.tenanttransaction" />
+          <EntitySet Name="transactiontypes" EntityType="Self.transactiontype" />
+          <EntitySet Name="units" EntityType="Self.unit" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <EntitySet Name="whitelables" EntityType="Self.whitelable" />
+          <EntitySet Name="chargetypes" EntityType="iRentModel.chargetype" />
+          <EntitySet Name="collections" EntityType="iRentModel.collection" />
+          <EntitySet Name="frequencies" EntityType="iRentModel.frequency" />
+          <EntitySet Name="postmethods" EntityType="iRentModel.postmethod" />
+          <EntitySet Name="recurringbills" EntityType="iRentModel.recurringbill" />
+          <EntitySet Name="userlogs" EntityType="iRentModel.userlog" />
+          <EntitySet Name="vendors" EntityType="iRentModel.vendor" />
+          <EntitySet Name="whitelists" EntityType="iRentModel.whitelist" />
+          <EntitySet Name="userpropertymaps" EntityType="iRentModel.userpropertymap" />
+          <EntitySet Name="postvacancies" EntityType="iRentModel.postvacancy" />
+          <EntitySet Name="properties_exclude" EntityType="iRentModel.properties_exclude" />
+        </EntityContainer>
+        <EntityType Name="chargetype">
+          <Key>
+            <PropertyRef Name="ChargeTypeID" />
+          </Key>
+          <Property Name="ChargeTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ChargeType1" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="collection">
+          <Key>
+            <PropertyRef Name="CollectionsID" />
+          </Key>
+          <Property Name="CollectionsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenantID" Type="Int32" Nullable="false" />
+          <Property Name="SentToCollections" Type="Int32" Nullable="false" />
+          <Property Name="DateSent" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="frequency">
+          <Key>
+            <PropertyRef Name="FrequencyID" />
+          </Key>
+          <Property Name="FrequencyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Frequency1" Type="String" Nullable="false" MaxLength="35" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="postmethod">
+          <Key>
+            <PropertyRef Name="PostMethodID" />
+          </Key>
+          <Property Name="PostMethodID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PostMethod1" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="recurringbill">
+          <Key>
+            <PropertyRef Name="RecurringBillsID" />
+          </Key>
+          <Property Name="RecurringBillsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" />
+          <Property Name="ExpenseTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Memo" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="FirstPayDate" Type="DateTime" Nullable="false" />
+          <Property Name="TransactionType" Type="Int32" Nullable="false" />
+          <Property Name="VendorID" Type="Int32" Nullable="false" />
+          <Property Name="Escrow" Type="Int32" Nullable="false" />
+          <Property Name="SubmitDate" Type="DateTime" Nullable="false" />
+          <Property Name="InvoiceNumber" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="SubmittedBy" Type="Int32" Nullable="false" />
+          <Property Name="FrequencyID" Type="Int32" Nullable="false" />
+          <Property Name="PostMethodID" Type="Int32" Nullable="false" />
+          <Property Name="NumberofPayments" Type="Int32" Nullable="false" />
+          <Property Name="Unlimited" Type="Int32" Nullable="false" />
+          <Property Name="Paid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="userlog">
+          <Key>
+            <PropertyRef Name="UserLogID" />
+          </Key>
+          <Property Name="UserLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LastPropertyID" Type="Int32" Nullable="false" />
+          <Property Name="LoginDate" Type="DateTime" Nullable="false" />
+          <Property Name="LogoutDate" Type="DateTime" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vendor">
+          <Key>
+            <PropertyRef Name="VendorID" />
+          </Key>
+          <Property Name="VendorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VendorName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="VendorAddress1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VendorAddress2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VendorCity" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VendorState" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VendorZip" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="VendorPhone" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="VendorEmail" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VendorStartDate" Type="DateTime" Nullable="false" />
+          <Property Name="CompanyID" Type="Int32" Nullable="false" />
+          <Property Name="RoutingNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="AcountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Active" Type="Int32" Nullable="false" />
+          <Property Name="VendorEIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="A1099" Type="Int32" />
+          <Property Name="Memo" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="whitelist">
+          <Key>
+            <PropertyRef Name="WhiteListID" />
+          </Key>
+          <Property Name="WhiteListID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="MoveOutDate" Type="DateTime" Nullable="false" />
+          <Property Name="TenantID" Type="Int32" Nullable="false" />
+          <Property Name="TenantEmail" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="TenantPhone" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="FAddress" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="FCity" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="FState" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="FZip" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Whitelist1" Type="Int32" Nullable="false" />
+          <Property Name="Collections" Type="Int32" Nullable="false" />
+          <Property Name="SubmitDate" Type="DateTime" Nullable="false" />
+          <Property Name="RentAgain" Type="Int32" Nullable="false" />
+          <Property Name="WhiteListComments" Type="String" Nullable="false" MaxLength="65535" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="userpropertymap">
+          <Key>
+            <PropertyRef Name="UserPropertyMapID" />
+          </Key>
+          <Property Name="UserPropertyMapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="postvacancy">
+          <Key>
+            <PropertyRef Name="PostVacancieID" />
+          </Key>
+          <Property Name="PostVacancieID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="AutoPostVacancies" Type="Int32" />
+          <Property Name="AutoRemoveNonVacancies" Type="Int32" />
+          <Property Name="UnitsUpdated" Type="Int32" />
+        </EntityType>
+        <EntityType Name="properties_exclude">
+          <Key>
+            <PropertyRef Name="Properties_ExcludeID" />
+          </Key>
+          <Property Name="Properties_ExcludeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropertyID" Type="Int32" Nullable="false" />
+          <Property Name="AutoBill" Type="Int32" Nullable="false" />
+          <Property Name="AutoBillNotify" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="iRentModelStoreContainer" CdmEntityContainer="MyiRentEntities">
+          <EntitySetMapping Name="backgrounds">
+            <EntityTypeMapping TypeName="iRentModel.background">
+              <MappingFragment StoreEntitySet="background">
+                <ScalarProperty Name="BackgroundID" ColumnName="BackgroundID" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="LastResidence" ColumnName="LastResidence" />
+                <ScalarProperty Name="LastLandlordName" ColumnName="LastLandlordName" />
+                <ScalarProperty Name="LastLandlordPhone" ColumnName="LastLandlordPhone" />
+                <ScalarProperty Name="PreviousResidence" ColumnName="PreviousResidence" />
+                <ScalarProperty Name="PreviousLandlordName" ColumnName="PreviousLandlordName" />
+                <ScalarProperty Name="PreviousLandlordPhone" ColumnName="PreviousLandlordPhone" />
+                <ScalarProperty Name="CurrentEmployer" ColumnName="CurrentEmployer" />
+                <ScalarProperty Name="CurrentEmployerContact" ColumnName="CurrentEmployerContact" />
+                <ScalarProperty Name="CurrentEmployerPhone" ColumnName="CurrentEmployerPhone" />
+                <ScalarProperty Name="CurrentSalary" ColumnName="CurrentSalary" />
+                <ScalarProperty Name="PreviousEmployer" ColumnName="PreviousEmployer" />
+                <ScalarProperty Name="PreviousEmployerContact" ColumnName="PreviousEmployerContact" />
+                <ScalarProperty Name="PreviousEmployerPhone" ColumnName="PreviousEmployerPhone" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="ApproveID" ColumnName="ApproveID" />
+                <ScalarProperty Name="ApproveComment" ColumnName="ApproveComment" />
+                <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+                <ScalarProperty Name="StreetName" ColumnName="StreetName" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="HouseNumber2" ColumnName="HouseNumber2" />
+                <ScalarProperty Name="StreetName2" ColumnName="StreetName2" />
+                <ScalarProperty Name="City2" ColumnName="City2" />
+                <ScalarProperty Name="State2" ColumnName="State2" />
+                <ScalarProperty Name="Zip2" ColumnName="Zip2" />
+                <ScalarProperty Name="Vehicle1" ColumnName="Vehicle1" />
+                <ScalarProperty Name="Vehicle2" ColumnName="Vehicle2" />
+                <ScalarProperty Name="Vehicle3" ColumnName="Vehicle3" />
+                <ScalarProperty Name="Unit2" ColumnName="Unit2" />
+                <ScalarProperty Name="DriversLicense" ColumnName="DriversLicense" />
+                <ScalarProperty Name="DLState" ColumnName="DLState" />
+                <ScalarProperty Name="DesiredMoveInDate" ColumnName="DesiredMoveInDate" />
+                <ScalarProperty Name="DesiredLeaseTerm" ColumnName="DesiredLeaseTerm" />
+                <ScalarProperty Name="DesiredRent" ColumnName="DesiredRent" />
+                <ScalarProperty Name="FormerName" ColumnName="FormerName" />
+                <ScalarProperty Name="CurrentOccupancyType" ColumnName="CurrentOccupancyType" />
+                <ScalarProperty Name="LastLandlordEmail" ColumnName="LastLandlordEmail" />
+                <ScalarProperty Name="LastRentAmount" ColumnName="LastRentAmount" />
+                <ScalarProperty Name="LastMoveReason" ColumnName="LastMoveReason" />
+                <ScalarProperty Name="LastMoveInDate" ColumnName="LastMoveInDate" />
+                <ScalarProperty Name="LastLandlordContact" ColumnName="LastLandlordContact" />
+                <ScalarProperty Name="CurrentEmployeerStatus" ColumnName="CurrentEmployeerStatus" />
+                <ScalarProperty Name="CurrentEmploymentType" ColumnName="CurrentEmploymentType" />
+                <ScalarProperty Name="CurrentSelfEmployment" ColumnName="CurrentSelfEmployment" />
+                <ScalarProperty Name="CurrentEmployeerEmail" ColumnName="CurrentEmployeerEmail" />
+                <ScalarProperty Name="CurrentEmployeerAddress" ColumnName="CurrentEmployeerAddress" />
+                <ScalarProperty Name="CurrentEmployeerPosition" ColumnName="CurrentEmployeerPosition" />
+                <ScalarProperty Name="CurrentEmployeerStartDate" ColumnName="CurrentEmployeerStartDate" />
+                <ScalarProperty Name="Background_PreviousEmploymentType" ColumnName="Background.PreviousEmploymentType" />
+                <ScalarProperty Name="PreviousSelfEmployment" ColumnName="PreviousSelfEmployment" />
+                <ScalarProperty Name="PreviousEmployeerEmail" ColumnName="PreviousEmployeerEmail" />
+                <ScalarProperty Name="PreviousEmployeerAddress" ColumnName="PreviousEmployeerAddress" />
+                <ScalarProperty Name="PreviousEmployeerPosition" ColumnName="PreviousEmployeerPosition" />
+                <ScalarProperty Name="PreviousEmployeerIncome" ColumnName="PreviousEmployeerIncome" />
+                <ScalarProperty Name="PreviousEmployeerStartDate" ColumnName="PreviousEmployeerStartDate" />
+                <ScalarProperty Name="PreviousEmployeerEndDate" ColumnName="PreviousEmployeerEndDate" />
+                <ScalarProperty Name="OtherIncome" ColumnName="OtherIncome" />
+                <ScalarProperty Name="Pets" ColumnName="Pets" />
+                <ScalarProperty Name="VehicleMake" ColumnName="VehicleMake" />
+                <ScalarProperty Name="VehicleModel" ColumnName="VehicleModel" />
+                <ScalarProperty Name="VehicleYear" ColumnName="VehicleYear" />
+                <ScalarProperty Name="VehicleColor" ColumnName="VehicleColor" />
+                <ScalarProperty Name="VehicleLicensePlate" ColumnName="VehicleLicensePlate" />
+                <ScalarProperty Name="VehicleLicensePlateState" ColumnName="VehicleLicensePlateState" />
+                <ScalarProperty Name="ProspectBank" ColumnName="ProspectBank" />
+                <ScalarProperty Name="ProspectBankPhone" ColumnName="ProspectBankPhone" />
+                <ScalarProperty Name="ProspectBankAccount" ColumnName="ProspectBankAccount" />
+                <ScalarProperty Name="ReferenceName" ColumnName="ReferenceName" />
+                <ScalarProperty Name="ReferenceRelationship" ColumnName="ReferenceRelationship" />
+                <ScalarProperty Name="ReferenceOccupation" ColumnName="ReferenceOccupation" />
+                <ScalarProperty Name="ReferenceAddress" ColumnName="ReferenceAddress" />
+                <ScalarProperty Name="ReferencePhone" ColumnName="ReferencePhone" />
+                <ScalarProperty Name="ReferenceEmail" ColumnName="ReferenceEmail" />
+                <ScalarProperty Name="EmergencyName" ColumnName="EmergencyName" />
+                <ScalarProperty Name="EmergencyRelationship" ColumnName="EmergencyRelationship" />
+                <ScalarProperty Name="EmergencyPhone" ColumnName="EmergencyPhone" />
+                <ScalarProperty Name="EmergencyEmail" ColumnName="EmergencyEmail" />
+                <ScalarProperty Name="PreviousEmploymentType" ColumnName="PreviousEmploymentType" />
+                <ScalarProperty Name="CurrentAddressMoveIn" ColumnName="CurrentAddressMoveIn" />
+                <ScalarProperty Name="PreviousAddressMoveIn" ColumnName="PreviousAddressMoveIn" />
+                <ScalarProperty Name="PreviousAddressMoveOut" ColumnName="PreviousAddressMoveOut" />
+                <ScalarProperty Name="CurrentCompanyName" ColumnName="CurrentCompanyName" />
+                <ScalarProperty Name="PreviousCompanyName" ColumnName="PreviousCompanyName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="checkregisters">
+            <EntityTypeMapping TypeName="iRentModel.checkregister">
+              <MappingFragment StoreEntitySet="checkregister">
+                <ScalarProperty Name="CheckRegisterID" ColumnName="CheckRegisterID" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="ExpenseTypeID" ColumnName="ExpenseTypeID" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="CheckDate" ColumnName="CheckDate" />
+                <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+                <ScalarProperty Name="Paid" ColumnName="Paid" />
+                <ScalarProperty Name="Reconciled" ColumnName="Reconciled" />
+                <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+                <ScalarProperty Name="Escrow" ColumnName="Escrow" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+                <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+                <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="companies">
+            <EntityTypeMapping TypeName="iRentModel.company">
+              <MappingFragment StoreEntitySet="company">
+                <ScalarProperty Name="TurnOffSendToCollection" ColumnName="TurnOffSendToCollection" />
+                <ScalarProperty Name="TurnOffUpdatedTransactionNotification" ColumnName="TurnOffUpdatedTransactionNotification" />
+                <ScalarProperty Name="AmountDue" ColumnName="AmountDue" />
+                <ScalarProperty Name="LateLicensePayment" ColumnName="LateLicensePayment" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="ContactFName" ColumnName="ContactFName" />
+                <ScalarProperty Name="ContactLName" ColumnName="ContactLName" />
+                <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+                <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+                <ScalarProperty Name="CompanyAdd" ColumnName="CompanyAdd" />
+                <ScalarProperty Name="CompanyAdd2" ColumnName="CompanyAdd2" />
+                <ScalarProperty Name="CompanyCity" ColumnName="CompanyCity" />
+                <ScalarProperty Name="CompanyState" ColumnName="CompanyState" />
+                <ScalarProperty Name="CompanyZip" ColumnName="CompanyZip" />
+                <ScalarProperty Name="CompanyStartDate" ColumnName="CompanyStartDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="LeadSourceCompanyID" ColumnName="LeadSourceCompanyID" />
+                <ScalarProperty Name="MarketingSource" ColumnName="MarketingSource" />
+                <ScalarProperty Name="ChargeByACH" ColumnName="ChargeByACH" />
+                <ScalarProperty Name="CompanyPayFee" ColumnName="CompanyPayFee" />
+                <ScalarProperty Name="AllPropertiesTenantPortal" ColumnName="AllPropertiesTenantPortal" />
+                <ScalarProperty Name="SendToCollection" ColumnName="SendToCollection" />
+                <ScalarProperty Name="AllowEvictionTenantPayOnline" ColumnName="AllowEvictionTenantPayOnline" />
+                <ScalarProperty Name="TurnOffOnlinePaymentsNotification" ColumnName="TurnOffOnlinePaymentsNotification" />
+                <ScalarProperty Name="ShowAllPropertiesTenants" ColumnName="ShowAllPropertiesTenants" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="customer_bank">
+            <EntityTypeMapping TypeName="iRentModel.customer_bank">
+              <MappingFragment StoreEntitySet="customer_bank">
+                <ScalarProperty Name="CustomerBankID" ColumnName="CustomerBankID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="AccountHolderName" ColumnName="AccountHolderName" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="RoutingNumber" ColumnName="RoutingNumber" />
+                <ScalarProperty Name="Verified" ColumnName="Verified" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="customer_cc">
+            <EntityTypeMapping TypeName="iRentModel.customer_cc">
+              <MappingFragment StoreEntitySet="customer_cc">
+                <ScalarProperty Name="Customer_CCID" ColumnName="Customer_CCID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CreditCard" ColumnName="CreditCard" />
+                <ScalarProperty Name="NameOnCard" ColumnName="NameOnCard" />
+                <ScalarProperty Name="ExpirationMonth" ColumnName="ExpirationMonth" />
+                <ScalarProperty Name="CCV" ColumnName="CCV" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="ExpirationYear" ColumnName="ExpirationYear" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="evictions">
+            <EntityTypeMapping TypeName="iRentModel.eviction">
+              <MappingFragment StoreEntitySet="evictions">
+                <ScalarProperty Name="EvictionID" ColumnName="EvictionID" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="ResponseID" ColumnName="ResponseID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Zone" ColumnName="Zone" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Middle" ColumnName="Middle" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="Court" ColumnName="Court" />
+                <ScalarProperty Name="Agency_State" ColumnName="Agency_State" />
+                <ScalarProperty Name="Agency_County" ColumnName="Agency_County" />
+                <ScalarProperty Name="Filing_Date" ColumnName="Filing_Date" />
+                <ScalarProperty Name="Case_No" ColumnName="Case_No" />
+                <ScalarProperty Name="Plaintiff" ColumnName="Plaintiff" />
+                <ScalarProperty Name="Notice_Type" ColumnName="Notice_Type" />
+                <ScalarProperty Name="Judgement_Date" ColumnName="Judgement_Date" />
+                <ScalarProperty Name="Judgement_Amount" ColumnName="Judgement_Amount" />
+                <ScalarProperty Name="Judgement" ColumnName="Judgement" />
+                <ScalarProperty Name="Judgement_Sat_Amount" ColumnName="Judgement_Sat_Amount" />
+                <ScalarProperty Name="Judgement_Rel_Date" ColumnName="Judgement_Rel_Date" />
+                <ScalarProperty Name="Dismissal_Date" ColumnName="Dismissal_Date" />
+                <ScalarProperty Name="Plaintiff_Atty" ColumnName="Plaintiff_Atty" />
+                <ScalarProperty Name="Plaintiff_Atty_Phone" ColumnName="Plaintiff_Atty_Phone" />
+                <ScalarProperty Name="SubmittedDate" ColumnName="SubmittedDate" />
+                <ScalarProperty Name="BackgroundCheckLogID" ColumnName="BackgroundCheckLogID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="expensetypes">
+            <EntityTypeMapping TypeName="iRentModel.expensetype">
+              <MappingFragment StoreEntitySet="expensetype">
+                <ScalarProperty Name="ExpenseTypeID" ColumnName="ExpenseTypeID" />
+                <ScalarProperty Name="ExpenseType1" ColumnName="ExpenseType" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="AccountTypeID" ColumnName="AccountTypeID" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="properties">
+            <EntityTypeMapping TypeName="iRentModel.property">
+              <MappingFragment StoreEntitySet="properties">
+                <ScalarProperty Name="BackgroundScreening" ColumnName="BackgroundScreening" />
+                <ScalarProperty Name="NotifyWorkOrderChanges" ColumnName="NotifyWorkOrderChanges" />
+                <ScalarProperty Name="AbsorbApplicationFee" ColumnName="AbsorbApplicationFee" />
+                <ScalarProperty Name="AlertUpcomingLeaseExpiration" ColumnName="AlertUpcomingLeaseExpiration" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="PropertyAddress1" ColumnName="PropertyAddress1" />
+                <ScalarProperty Name="PropertyAddress2" ColumnName="PropertyAddress2" />
+                <ScalarProperty Name="PropertyCity" ColumnName="PropertyCity" />
+                <ScalarProperty Name="PropertyState" ColumnName="PropertyState" />
+                <ScalarProperty Name="PropertyZip" ColumnName="PropertyZip" />
+                <ScalarProperty Name="PropertyEmail" ColumnName="PropertyEmail" />
+                <ScalarProperty Name="PropertyPhone" ColumnName="PropertyPhone" />
+                <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+                <ScalarProperty Name="LateFee" ColumnName="LateFee" />
+                <ScalarProperty Name="LateFeeApplied" ColumnName="LateFeeApplied" />
+                <ScalarProperty Name="EvictionThreshold" ColumnName="EvictionThreshold" />
+                <ScalarProperty Name="SMSThreshold" ColumnName="SMSThreshold" />
+                <ScalarProperty Name="BankFee" ColumnName="BankFee" />
+                <ScalarProperty Name="DailyLateFee" ColumnName="DailyLateFee" />
+                <ScalarProperty Name="PetFine" ColumnName="PetFine" />
+                <ScalarProperty Name="DailyPetFine" ColumnName="DailyPetFine" />
+                <ScalarProperty Name="Gas" ColumnName="Gas" />
+                <ScalarProperty Name="Electricity" ColumnName="Electricity" />
+                <ScalarProperty Name="Water" ColumnName="Water" />
+                <ScalarProperty Name="Trash" ColumnName="Trash" />
+                <ScalarProperty Name="TV" ColumnName="TV" />
+                <ScalarProperty Name="Internet" ColumnName="Internet" />
+                <ScalarProperty Name="LaborRate" ColumnName="LaborRate" />
+                <ScalarProperty Name="EvictionFee" ColumnName="EvictionFee" />
+                <ScalarProperty Name="SecurityDeposit" ColumnName="SecurityDeposit" />
+                <ScalarProperty Name="NRSecurityDeposit" ColumnName="NRSecurityDeposit" />
+                <ScalarProperty Name="MaxLateFee" ColumnName="MaxLateFee" />
+                <ScalarProperty Name="MinBalance" ColumnName="MinBalance" />
+                <ScalarProperty Name="ApplicationFee" ColumnName="ApplicationFee" />
+                <ScalarProperty Name="AdminFee" ColumnName="AdminFee" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="PropertyEIN" ColumnName="PropertyEIN" />
+                <ScalarProperty Name="PropertyURL" ColumnName="PropertyURL" />
+                <ScalarProperty Name="PropertyWebsite" ColumnName="PropertyWebsite" />
+                <ScalarProperty Name="PropertyLongDescription" ColumnName="PropertyLongDescription" />
+                <ScalarProperty Name="PropertyOfficeHoursID" ColumnName="PropertyOfficeHoursID" />
+                <ScalarProperty Name="AllowTenantsPayLessThanAmountDue" ColumnName="AllowTenantsPayLessThanAmountDue" />
+                <ScalarProperty Name="CheckID" ColumnName="CheckID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stripes">
+            <EntityTypeMapping TypeName="iRentModel.stripe">
+              <MappingFragment StoreEntitySet="stripe">
+                <ScalarProperty Name="StripeID" ColumnName="StripeID" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="SecretKey" ColumnName="SecretKey" />
+                <ScalarProperty Name="PublishableKey" ColumnName="PublishableKey" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stripe_customer">
+            <EntityTypeMapping TypeName="iRentModel.stripe_customer">
+              <MappingFragment StoreEntitySet="stripe_customer">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="StripeCustomer" ColumnName="StripeCustomer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stripepayoutdetails">
+            <EntityTypeMapping TypeName="iRentModel.stripepayoutdetail">
+              <MappingFragment StoreEntitySet="stripepayoutdetails">
+                <ScalarProperty Name="StripePayoutDetailsID" ColumnName="StripePayoutDetailsID" />
+                <ScalarProperty Name="StripePayoutID" ColumnName="StripePayoutID" />
+                <ScalarProperty Name="AmountGross" ColumnName="AmountGross" />
+                <ScalarProperty Name="Fee" ColumnName="Fee" />
+                <ScalarProperty Name="AmountNet" ColumnName="AmountNet" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stripepayouts">
+            <EntityTypeMapping TypeName="iRentModel.stripepayout">
+              <MappingFragment StoreEntitySet="stripepayouts">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="StripePayoutID" ColumnName="StripePayoutID" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tenants">
+            <EntityTypeMapping TypeName="iRentModel.tenant">
+              <MappingFragment StoreEntitySet="tenants">
+                <ScalarProperty Name="LastInitialLateFee" ColumnName="LastInitialLateFee" />
+                <ScalarProperty Name="TenantDescriptionText" ColumnName="TenantDescriptionText" />
+                <ScalarProperty Name="HOAFee" ColumnName="HOAFee" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="TenantFName" ColumnName="TenantFName" />
+                <ScalarProperty Name="TenantMName" ColumnName="TenantMName" />
+                <ScalarProperty Name="TenantLName" ColumnName="TenantLName" />
+                <ScalarProperty Name="TenantPhone" ColumnName="TenantPhone" />
+                <ScalarProperty Name="TenantOtherPhone" ColumnName="TenantOtherPhone" />
+                <ScalarProperty Name="TenantEmail" ColumnName="TenantEmail" />
+                <ScalarProperty Name="SSN" ColumnName="SSN" />
+                <ScalarProperty Name="ProspectComments" ColumnName="ProspectComments" />
+                <ScalarProperty Name="ProspectStartDate" ColumnName="ProspectStartDate" />
+                <ScalarProperty Name="UnitTypeID" ColumnName="UnitTypeID" />
+                <ScalarProperty Name="Prospect" ColumnName="Prospect" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="LeaseStartDate" ColumnName="LeaseStartDate" />
+                <ScalarProperty Name="LeaseEndDate" ColumnName="LeaseEndDate" />
+                <ScalarProperty Name="MoveInDate" ColumnName="MoveInDate" />
+                <ScalarProperty Name="MoveOutDate" ColumnName="MoveOutDate" />
+                <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+                <ScalarProperty Name="RentalAmount" ColumnName="RentalAmount" />
+                <ScalarProperty Name="HousingAmount" ColumnName="HousingAmount" />
+                <ScalarProperty Name="SecurityDeposit" ColumnName="SecurityDeposit" />
+                <ScalarProperty Name="PetRent" ColumnName="PetRent" />
+                <ScalarProperty Name="TVCharge" ColumnName="TVCharge" />
+                <ScalarProperty Name="UtilityCharge" ColumnName="UtilityCharge" />
+                <ScalarProperty Name="Collections" ColumnName="Collections" />
+                <ScalarProperty Name="WhiteList" ColumnName="WhiteList" />
+                <ScalarProperty Name="EvictionFiled" ColumnName="EvictionFiled" />
+                <ScalarProperty Name="EvictionFiledDate" ColumnName="EvictionFiledDate" />
+                <ScalarProperty Name="LeaseUpload" ColumnName="LeaseUpload" />
+                <ScalarProperty Name="LeaseAudit" ColumnName="LeaseAudit" />
+                <ScalarProperty Name="CellPhoneProviderID" ColumnName="CellPhoneProviderID" />
+                <ScalarProperty Name="LeadSourceID" ColumnName="LeadSourceID" />
+                <ScalarProperty Name="OnLease" ColumnName="OnLease" />
+                <ScalarProperty Name="StorageCharge" ColumnName="StorageCharge" />
+                <ScalarProperty Name="ParkingCharge" ColumnName="ParkingCharge" />
+                <ScalarProperty Name="ConcessionAmount" ColumnName="ConcessionAmount" />
+                <ScalarProperty Name="ConcessionReason" ColumnName="ConcessionReason" />
+                <ScalarProperty Name="NoticeGiven" ColumnName="NoticeGiven" />
+                <ScalarProperty Name="DelinquencyComments" ColumnName="DelinquencyComments" />
+                <ScalarProperty Name="MTM" ColumnName="MTM" />
+                <ScalarProperty Name="MoveOutReasonID" ColumnName="MoveOutReasonID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tenanttransactions">
+            <EntityTypeMapping TypeName="iRentModel.tenanttransaction">
+              <MappingFragment StoreEntitySet="tenanttransactions">
+                <ScalarProperty Name="AmountAllocated" ColumnName="AmountAllocated" />
+                <ScalarProperty Name="Allocated" ColumnName="Allocated" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="TenantTransactionID" ColumnName="TenantTransactionID" />
+                <ScalarProperty Name="ChargeTypeID" ColumnName="ChargeTypeID" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+                <ScalarProperty Name="TransactionAmount" ColumnName="TransactionAmount" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="TenantTransactionDate" ColumnName="TenantTransactionDate" />
+                <ScalarProperty Name="PaymentTypeID" ColumnName="PaymentTypeID" />
+                <ScalarProperty Name="CheckRegisterID" ColumnName="CheckRegisterID" />
+                <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+                <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+                <ScalarProperty Name="DepositSourceID" ColumnName="DepositSourceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="transactiontypes">
+            <EntityTypeMapping TypeName="iRentModel.transactiontype">
+              <MappingFragment StoreEntitySet="transactiontypes">
+                <ScalarProperty Name="TransactionTypeID" ColumnName="TransactionTypeID" />
+                <ScalarProperty Name="TransactionType1" ColumnName="TransactionType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="units">
+            <EntityTypeMapping TypeName="iRentModel.unit">
+              <MappingFragment StoreEntitySet="units">
+                <ScalarProperty Name="PostToVacancies" ColumnName="PostToVacancies" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+                <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="UnitTypeID" ColumnName="UnitTypeID" />
+                <ScalarProperty Name="Occupied" ColumnName="Occupied" />
+                <ScalarProperty Name="VacantDate" ColumnName="VacantDate" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="iRentModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="SignatureFont" ColumnName="SignatureFont" />
+                <ScalarProperty Name="SignatureName" ColumnName="SignatureName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserFName" ColumnName="UserFName" />
+                <ScalarProperty Name="UserLName" ColumnName="UserLName" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+                <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
+                <ScalarProperty Name="CellPhoneProviderID" ColumnName="CellPhoneProviderID" />
+                <ScalarProperty Name="UserPW" ColumnName="UserPW" />
+                <ScalarProperty Name="UserStartDate" ColumnName="UserStartDate" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="SecurityLevelID" ColumnName="SecurityLevelID" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="whitelables">
+            <EntityTypeMapping TypeName="iRentModel.whitelable">
+              <MappingFragment StoreEntitySet="whitelable">
+                <ScalarProperty Name="WhiteLableID" ColumnName="WhiteLableID" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="BannerColor" ColumnName="BannerColor" />
+                <ScalarProperty Name="LeftMarginColor" ColumnName="LeftMarginColor" />
+                <ScalarProperty Name="WelcomeColor" ColumnName="WelcomeColor" />
+                <ScalarProperty Name="Style" ColumnName="Style" />
+                <ScalarProperty Name="Logout" ColumnName="Logout" />
+                <ScalarProperty Name="PriceImage" ColumnName="PriceImage" />
+                <ScalarProperty Name="Promo1" ColumnName="Promo1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="chargetypes">
+            <EntityTypeMapping TypeName="iRentModel.chargetype">
+              <MappingFragment StoreEntitySet="chargetypes">
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="ChargeType1" ColumnName="ChargeType" />
+                <ScalarProperty Name="ChargeTypeID" ColumnName="ChargeTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="collections">
+            <EntityTypeMapping TypeName="iRentModel.collection">
+              <MappingFragment StoreEntitySet="collections">
+                <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+                <ScalarProperty Name="SentToCollections" ColumnName="SentToCollections" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="CollectionsID" ColumnName="CollectionsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="frequencies">
+            <EntityTypeMapping TypeName="iRentModel.frequency">
+              <MappingFragment StoreEntitySet="frequency">
+                <ScalarProperty Name="Frequency1" ColumnName="Frequency" />
+                <ScalarProperty Name="FrequencyID" ColumnName="FrequencyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="postmethods">
+            <EntityTypeMapping TypeName="iRentModel.postmethod">
+              <MappingFragment StoreEntitySet="postmethod">
+                <ScalarProperty Name="PostMethod1" ColumnName="PostMethod" />
+                <ScalarProperty Name="PostMethodID" ColumnName="PostMethodID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="recurringbills">
+            <EntityTypeMapping TypeName="iRentModel.recurringbill">
+              <MappingFragment StoreEntitySet="recurringbills">
+                <ScalarProperty Name="Paid" ColumnName="Paid" />
+                <ScalarProperty Name="Unlimited" ColumnName="Unlimited" />
+                <ScalarProperty Name="NumberofPayments" ColumnName="NumberofPayments" />
+                <ScalarProperty Name="PostMethodID" ColumnName="PostMethodID" />
+                <ScalarProperty Name="FrequencyID" ColumnName="FrequencyID" />
+                <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+                <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+                <ScalarProperty Name="SubmitDate" ColumnName="SubmitDate" />
+                <ScalarProperty Name="Escrow" ColumnName="Escrow" />
+                <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+                <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+                <ScalarProperty Name="FirstPayDate" ColumnName="FirstPayDate" />
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="ExpenseTypeID" ColumnName="ExpenseTypeID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="RecurringBillsID" ColumnName="RecurringBillsID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userlogs">
+            <EntityTypeMapping TypeName="iRentModel.userlog">
+              <MappingFragment StoreEntitySet="userlog">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="LogoutDate" ColumnName="LogoutDate" />
+                <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+                <ScalarProperty Name="LastPropertyID" ColumnName="LastPropertyID" />
+                <ScalarProperty Name="UserLogID" ColumnName="UserLogID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vendors">
+            <EntityTypeMapping TypeName="iRentModel.vendor">
+              <MappingFragment StoreEntitySet="vendors">
+                <ScalarProperty Name="Memo" ColumnName="Memo" />
+                <ScalarProperty Name="A1099" ColumnName="A1099" />
+                <ScalarProperty Name="VendorEIN" ColumnName="VendorEIN" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="AcountNumber" ColumnName="AcountNumber" />
+                <ScalarProperty Name="RoutingNumber" ColumnName="RoutingNumber" />
+                <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+                <ScalarProperty Name="VendorStartDate" ColumnName="VendorStartDate" />
+                <ScalarProperty Name="VendorEmail" ColumnName="VendorEmail" />
+                <ScalarProperty Name="VendorPhone" ColumnName="VendorPhone" />
+                <ScalarProperty Name="VendorZip" ColumnName="VendorZip" />
+                <ScalarProperty Name="VendorState" ColumnName="VendorState" />
+                <ScalarProperty Name="VendorCity" ColumnName="VendorCity" />
+                <ScalarProperty Name="VendorAddress2" ColumnName="VendorAddress2" />
+                <ScalarProperty Name="VendorAddress1" ColumnName="VendorAddress1" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="VendorID" ColumnName="VendorID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="whitelists">
+            <EntityTypeMapping TypeName="iRentModel.whitelist">
+              <MappingFragment StoreEntitySet="whitelist">
+                <ScalarProperty Name="WhiteListComments" ColumnName="WhiteListComments" />
+                <ScalarProperty Name="RentAgain" ColumnName="RentAgain" />
+                <ScalarProperty Name="SubmitDate" ColumnName="SubmitDate" />
+                <ScalarProperty Name="Collections" ColumnName="Collections" />
+                <ScalarProperty Name="Whitelist1" ColumnName="Whitelist" />
+                <ScalarProperty Name="FZip" ColumnName="FZip" />
+                <ScalarProperty Name="FState" ColumnName="FState" />
+                <ScalarProperty Name="FCity" ColumnName="FCity" />
+                <ScalarProperty Name="FAddress" ColumnName="FAddress" />
+                <ScalarProperty Name="TenantPhone" ColumnName="TenantPhone" />
+                <ScalarProperty Name="TenantEmail" ColumnName="TenantEmail" />
+                <ScalarProperty Name="TenantID" ColumnName="TenantID" />
+                <ScalarProperty Name="MoveOutDate" ColumnName="MoveOutDate" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="WhiteListID" ColumnName="WhiteListID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userpropertymaps">
+            <EntityTypeMapping TypeName="iRentModel.userpropertymap">
+              <MappingFragment StoreEntitySet="userpropertymap">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="UserPropertyMapID" ColumnName="UserPropertyMapID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="postvacancies">
+            <EntityTypeMapping TypeName="iRentModel.postvacancy">
+              <MappingFragment StoreEntitySet="postvacancies">
+                <ScalarProperty Name="UnitsUpdated" ColumnName="UnitsUpdated" />
+                <ScalarProperty Name="AutoRemoveNonVacancies" ColumnName="AutoRemoveNonVacancies" />
+                <ScalarProperty Name="AutoPostVacancies" ColumnName="AutoPostVacancies" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="PostVacancieID" ColumnName="PostVacancieID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="properties_exclude">
+            <EntityTypeMapping TypeName="iRentModel.properties_exclude">
+              <MappingFragment StoreEntitySet="properties_exclude">
+                <ScalarProperty Name="AutoBillNotify" ColumnName="AutoBillNotify" />
+                <ScalarProperty Name="AutoBill" ColumnName="AutoBill" />
+                <ScalarProperty Name="PropertyID" ColumnName="PropertyID" />
+                <ScalarProperty Name="Properties_ExcludeID" ColumnName="Properties_ExcludeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
